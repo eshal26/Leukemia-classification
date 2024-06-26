@@ -25,8 +25,9 @@ The following deep learning models have been implemented and evaluated for leuke
 - **VGG**: Characterized by its uniform architecture with very small (3x3) convolution filters.
 
 ## Dataset
-This dataset is divided into two classes benign and malignant. The former comprises hematogones; the latter is the ALL group with three subtypes of malignant lymphoblasts: Early Pre-B, Pre-B, and Pro-B ALL. 
-https://www.kaggle.com/datasets/mehradaria/leukemia
+This dataset is divided into two classes benign and malignant. The malignant class consists of 3 categories early, pre, pro.
+
+ https://www.kaggle.com/datasets/mehradaria/leukemia
 
 ## Results
 
