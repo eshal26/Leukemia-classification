@@ -30,6 +30,25 @@ This dataset is divided into two classes benign and malignant. The malignant cla
  https://www.kaggle.com/datasets/mehradaria/leukemia
 
 ## Results
+## Results
+
+We evaluated four different deep learning models: AlexNet, ResNet-50, GoogLeNet, and VGG16 on our dataset. The performance metrics for each model are as follows:
+
+### Test Metrics
+
+| Model     | Accuracy | Precision | Recall  | F1-score |
+|-----------|----------|-----------|---------|----------|
+| **AlexNet**   | 0.9847   | 0.9892    | 0.9928  | 0.9910   |
+| **ResNet-50** | 0.9939   | 0.9941    | 0.9939  | 0.9939   |
+| **GoogLeNet** | 0.9817   | 0.9927    | 0.9855  | 0.9891   |
+| **VGG16**     | 0.9969   | 0.9982    | 0.9902  | 0.9941   |
+
+### Conclusion
+
+Based on the test metrics, VGG16 performed the best with the highest accuracy and precision. ResNet-50 also showed excellent performance, closely following VGG16. AlexNet and GoogLeNet, while still performing well, lagged behind the other two models in some metrics.
+
+For further details, refer to the code and data in this repository.
+
 
 ## Contributing
 Contributions to improve the repository, add new models, or enhance documentation are welcome. 
