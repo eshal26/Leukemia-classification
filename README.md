@@ -31,22 +31,21 @@ This dataset is divided into two classes benign and malignant. The malignant cla
 
 ## Results
 
-We evaluated four different deep learning models: AlexNet, ResNet-50, GoogLeNet, and VGG16 on our dataset. The performance metrics for each model are as follows:
-
-### Test Metrics
-
-| Model     | Accuracy | Precision | Recall  | F1-score |
-|-----------|----------|-----------|---------|----------|
-| **AlexNet**   | 0.9847   | 0.9892    | 0.9928  | 0.9910   |
-| **ResNet-50** | 0.9939   | 0.9941    | 0.9939  | 0.9939   |
-| **GoogLeNet** | 0.9817   | 0.9927    | 0.9855  | 0.9891   |
-| **VGG16**     | 0.9969   | 0.9982    | 0.9902  | 0.9941   |
+| Model      | Test Loss | Test Accuracy | Test Precision | Test Recall | Test F1-score | Confusion Matrix         |
+|------------|------------|---------------|----------------|-------------|---------------|--------------------------|
+| **AlexNet**  | 0.0888     | 0.9786        | 0.9794         | 0.9786      | 0.9788        | `[[ 49   2] [  5 271]]`  |
+| **GoogLeNet**| 0.0984     | 0.9725        | 0.9721         | 0.9725      | 0.9721        | `[[ 45   6] [  3 273]]`  |
+| **ResNet50** | 0.0234     | 0.9908        | 0.9909         | 0.9908      | 0.9907        | `[[ 48   3] [  0 276]]`  |
+| **VGG16**    | 0.0008     | 1.0000        | 1.0000         | 1.0000      | 1.0000        | `[[ 51   0] [  0 276]]`  |
+| **VGG19**    | 0.0034     | 1.0000        | 1.0000         | 1.0000      | 1.0000        | `[[ 51   0] [  0 276]]`  |
 
 ## Conclusion
 
-Based on the test metrics, VGG16 performed the best with the highest accuracy and precision. ResNet-50 also showed excellent performance, closely following VGG16. AlexNet and GoogLeNet, while still performing well, lagged behind the other two models in some metrics.
+- **VGG16 and VGG19** performed the best overall, with perfect accuracy, precision, recall, and F1-scores, as well as no misclassifications.
+- **ResNet50** also performed very well but with a slight edge to VGG models.
+- **AlexNet and GoogLeNet** performed decently but with more errors compared to the other models.
 
-For further details, refer to the code and data in this repository.
+Given these metrics, VGG16 and VGG19 are the top performers, with ResNet50 as a strong contender.
 
 
 ## Contributing
