@@ -39,6 +39,9 @@ This dataset is divided into two classes benign and malignant. The malignant cla
 | **VGG16**    | 0.0008     | 1.0000        | 1.0000         | 1.0000      | 1.0000        | `[[ 51   0] [  0 276]]`  |
 | **VGG19**    | 0.0034     | 1.0000        | 1.0000         | 1.0000      | 1.0000        | `[[ 51   0] [  0 276]]`  |
 
+## ROC and PR Curve
+![image](https://github.com/eshal26/Leukemia-classification/assets/124394813/f5bfb9c2-c68a-45b5-83b8-592c9252b218)
+
 ## Conclusion
 
 - **VGG16 and VGG19** performed the best overall, with perfect accuracy, precision, recall, and F1-scores, as well as no misclassifications.
